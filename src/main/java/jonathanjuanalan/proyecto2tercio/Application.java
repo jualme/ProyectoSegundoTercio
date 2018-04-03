@@ -10,11 +10,8 @@ package jonathanjuanalan.proyecto2tercio;
  * @author Juancho
  */
 import java.io.IOException;
-import java.net.ServerSocket;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 public class Application {

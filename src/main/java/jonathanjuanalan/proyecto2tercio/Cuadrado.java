@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
  * @author Juancho
  */
 @RestController
-@RequestMapping("/test")
+@RequestMapping("/cuadrado")
 public class Cuadrado {
 
     @RequestMapping("/{number}")
