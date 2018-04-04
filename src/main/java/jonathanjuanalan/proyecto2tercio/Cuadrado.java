@@ -18,7 +18,8 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/cuadrado")
 public class Cuadrado {
 
-    @RequestMapping("/{number}")
+    //@RequestMapping("/{number}")
+    @RequestMapping(method = RequestMethod.GET, path = "/{number}")
     public ResponseEntity<?> cuadrado(@PathVariable("number") int number){
         return new ResponseEntity<>(number*number,HttpStatus.OK);
     }
