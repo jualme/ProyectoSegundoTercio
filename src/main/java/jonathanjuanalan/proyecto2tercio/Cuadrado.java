@@ -5,6 +5,8 @@
  */
 package jonathanjuanalan.proyecto2tercio;
 
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 
@@ -17,7 +19,7 @@ import org.springframework.web.bind.annotation.*;
 public class Cuadrado {
 
     @RequestMapping("/{number}")
-    public String cuadrado(@PathVariable("number") int number){
-        return String.valueOf(Math.pow(number,2));
+    public ResponseEntity<?> cuadrado(@PathVariable("number") int number){
+        return new ResponseEntity<>(number*number,HttpStatus.OK);
     }
 }
